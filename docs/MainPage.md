@@ -175,13 +175,13 @@ Theoretically the **MCU output voltage = 5 V**. All LEDs in this circuit have a 
 - **Single LEDs:** with a **R = 140** \f$\boldsymbol{\Omega}\f$, we have a safe theoretical LED forward current:
 
 $$
-    I_{1-Single-LED}=\frac{5\ V - 2.4\ V}{140\ \Omega}=18.57\ mA
+    I_{1-Single-LED}=\frac{5\ \text{V} - 2.4\ \text{V}}{140\ \Omega}=18.57\ \text{mA}
 $$
 
 - **Parallel LEDs:** with a **R = 100** \f$\boldsymbol{\Omega}\f$, we have a safe theoretical LED forward current:
 
 $$
-    I_{1-Parallel-LED}=\left(\frac{5\ V - 2.4\ V}{100\ \Omega}\right)\cdot \frac{1}{2}=13\ mA
+    I_{1-Parallel-LED}=\left(\frac{5\ \text{V} - 2.4\ \text{V}}{100\ \Omega}\right)\cdot \frac{1}{2}=13\ \text{mA}
 $$
 
 ## Buttons - Switch Debouncing
@@ -223,7 +223,7 @@ $$
 - **OCR0A = 244** - This sets time interrupts every 0.250 s. Calculated as:
 
 $$
-    x = \frac{0.250\ s}{T}=\frac{0.250\ s}{1.024\ ms}= 244.14 \approx 244
+    x = \frac{0.250\ \text{s}}{T}=\frac{0.250\ \text{s}}{1.024\ \text{ms}}= 244.14 \approx 244
 $$
 
 

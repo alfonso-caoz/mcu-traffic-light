@@ -263,11 +263,11 @@ LED - Resistor</h2>
 <ul>
 <li><b>Single LEDs:</b> with a <b>R = 140</b> \(\boldsymbol{\Omega}\), we have a safe theoretical LED forward current:</li>
 </ul>
-<p>$$ I_{1-Single-LED}=\frac{5\ V - 2.4\ V}{140\ \Omega}=18.57\ mA $$</p>
+<p>$$ I_{1-Single-LED}=\frac{5\ \text{V} - 2.4\ \text{V}}{140\ \Omega}=18.57\ \text{mA} $$</p>
 <ul>
 <li><b>Parallel LEDs:</b> with a <b>R = 100</b> \(\boldsymbol{\Omega}\), we have a safe theoretical LED forward current:</li>
 </ul>
-<p>$$ I_{1-Parallel-LED}=\left(\frac{5\ V - 2.4\ V}{100\ \Omega}\right)\cdot \frac{1}{2}=13\ mA $$</p>
+<p>$$ I_{1-Parallel-LED}=\left(\frac{5\ \text{V} - 2.4\ \text{V}}{100\ \Omega}\right)\cdot \frac{1}{2}=13\ \text{mA} $$</p>
 <h2><a class="anchor" id="buttons---switch-debouncing"></a>
 Buttons - Switch Debouncing</h2>
 <ul>
@@ -302,7 +302,7 @@ Internal Interrupt Configuration - Timer</h2>
 <ul>
 <li><b>OCR0A = 244</b> - This sets time interrupts every 0.250 s. Calculated as:</li>
 </ul>
-<p>$$ x = \frac{0.250\ s}{T}=\frac{0.250\ s}{1.024\ ms}= 244.14 \approx 244 $$</p>
+<p>$$ x = \frac{0.250\ \text{s}}{T}=\frac{0.250\ \text{s}}{1.024\ \text{ms}}= 244.14 \approx 244 $$</p>
 <ul>
 <li><b>TCCR0A |= 0x00</b> - Set to 0 to avoid pin <b>OC0A</b> (<b>PB2</b>) being set to HIGH after every time interrupt. This is the default configuration.</li>
 <li><b>TIMSK |= 0x01</b> - Set to 1 to make the time interrupt work by comparison (0.250 s), not by overflow. </li>
